@@ -1,0 +1,28 @@
+package pack1;
+
+public class Parent {
+	
+    Parent(){
+    	System.out.println("parent default constructor");
+    }
+    Parent(int i){
+    	System.out.println("parent 1 parametarized constructor");
+    }
+    Parent(int i , int j){
+    	System.out.println("parent 2 parametarized constructor");
+    }
+	}
+  
+  
+  
+  package pack1;
+
+public class Child extends Parent{
+
+	public static void main(String[] args) {
+		Parent obj = new Parent();
+		Parent obj1 = new Parent(30);
+		Parent obj2 = new Parent(20,87);
+		
+	}
+}
